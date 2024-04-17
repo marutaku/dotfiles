@@ -1,0 +1,184 @@
+{
+    "go.toolsGopath": "/Users/marutaku/go",
+    "files.autoSave": "afterDelay",
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "go.lintOnSave": "package",
+    "go.formatTool": "goimports",
+    "go.autocompleteUnimportedPackages": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "editor.tabCompletion": "on",
+    "ruby.intellisense": "rubyLocate",
+    "go.useLanguageServer": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "japanese-proofreading.textlint.句点(。)と読点(、)": false,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "workbench.colorTheme": "GitHub Dark",
+    "gitlens.defaultDateFormat": null,
+    "gitlens.hovers.currentLine.over": "line",
+    "git.autofetch": true,
+    "color-highlight.markerType": "dot-after",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "auto-close-tag.activationOnLanguage": [
+        "html.erb",
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist",
+    ],
+    "auto-close-tag.disableOnLanguage": [],
+    "auto-close-tag.fullMode": true,
+    "git.suggestSmartCommit": false,
+    "svgviewer.enableautopreview": true,
+    "svgviewer.previewcolumn": "Active",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "redhat.telemetry.enabled": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git-graph.dialog.createBranch.checkOut": true,
+    "git-graph.dialog.fetchRemote.prune": true,
+    "cSpell.userWords": [],
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.profiles.osx": {
+        "/bin/bash (migrated)": {
+            "path": "/bin/bash",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "workbench.startupEditor": "none",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[dockercompose]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "erb"
+        ]
+    },
+    "editor.tabSize": 2,
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": false
+        }
+    },
+    "ruby.format": "rubocop",
+    "ruby.useLanguageServer": true,
+    "[ruby]": {
+        "editor.defaultFormatter": "rebornix.ruby"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "githubPullRequests.pullBranch": "never",
+    "explorer.confirmDelete": false,
+    "editor.inlineSuggest.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "dev.containers.defaultExtensions": [
+        "streetsidesoftware.code-spell-checker",
+        "github.copilot"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.workingDirectories": [],
+    "window.zoomLevel": 1,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "go.toolsManagement.autoUpdate": true,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+}
