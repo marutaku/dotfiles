@@ -21,10 +21,10 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=~/.npm-global/bin:$PATH
+export PATH=$HOME/.npm-global/bin:$PATH
 export PATH="/usr/local/opt/scala@2.13/bin:$PATH"
 autoload -Uz compinit 
-fpath=(~/.zsh/completion $fpath)
+fpath=($HOME/.zsh/completion $fpath)
 compinit -i
 
 compinit -u
@@ -73,7 +73,7 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 chpwd() {
 }
 : "sshコマンド補完を~/.ssh/configから行う" && {
-  function _ssh { compadd $(fgrep 'Host ' ~/.ssh/*/config | grep -v '*' |  awk '{print $2}' | sort) }
+  function _ssh { compadd $(fgrep 'Host ' $HOME/.ssh/*/config | grep -v '*' |  awk '{print $2}' | sort) }
 }
 function peco-history-selection() {
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
@@ -91,14 +91,13 @@ if ! zplug check --verbose; then
     fi
 fi
 # コマンドをリンクして、PATH に追加し、プラグインは読み込む
-zplug load  --verbose
+zplug load
 
 #git prompt
-source ~/.git-prompt.sh
+source $HOME/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
-#PROMPT='[%n@%m:%~]$(__git_ps1" (%s)")%# '
 # For pyenv 
 export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv > /dev/null; then 
@@ -209,7 +208,7 @@ alias dcb="docker compose build"
 alias gfa="git fetch --all"
 
 # pnpm
-export PNPM_HOME="$(HOME)/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
