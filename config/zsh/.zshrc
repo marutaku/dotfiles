@@ -208,14 +208,8 @@ alias dcb="docker compose build"
 ## Git ##
 alias gfa="git fetch --all"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/marutaku/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/marutaku/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/marutaku/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/marutaku/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 # pnpm
-export PNPM_HOME="/Users/marutaku/Library/pnpm"
+export PNPM_HOME="$(HOME)/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
