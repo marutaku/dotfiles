@@ -52,6 +52,7 @@ setopt magic_equal_subst
 ########################################
 #               zplugs 
 #######################################
+# テーマを設定
 zplug "yous/lime"
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
