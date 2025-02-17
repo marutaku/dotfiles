@@ -10,4 +10,4 @@ else
   git -C ${DOTFILES_REPO_DIR} pull
 fi
 
-sh ${DOTFILES_REPO_DIR}/script/setup.sh
+sh ${DOTFILES_REPO_DIR}/script/setup.zsh

@@ -1,4 +1,4 @@
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 autoload -U promptinit; promptinit
 #fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
@@ -61,7 +61,6 @@ zplug "mollifier/anyframe"
 zplug "mollifier/cd-gitroot"
 # zplug "b4b4r07/enhancd", use:enhancd.sh
 zplug "zsh-users/zsh-history-substring-search", hook-build:"__zsh_version 4.3"
-zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
 zplug "junegunn/fzf", as:command, use:bin/fzf-tmux
 zplug "supercrabtree/k"
 zplug "junegunn/fzf", use:shell/key-bindings.zsh
@@ -143,4 +142,3 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-. "$HOME/.asdf/asdf.sh"
