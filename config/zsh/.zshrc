@@ -1,6 +1,6 @@
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
-autoload -U promptinit; promptinit
+#autoload -U promptinit; promptinit
 #fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 fpath=(~/.zsh-completions $fpath)
 # 履歴ファイルの保存先
@@ -52,7 +52,6 @@ setopt magic_equal_subst
 ########################################
 #               zplugs 
 #######################################
-# テーマを設定
 zplug "yous/lime"
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
@@ -143,3 +142,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+if type mise &>/dev/null; then
+  eval "$(mise activate zsh)"
+  eval "$(mise activate --shims)"
+fi
