@@ -147,3 +147,4 @@ if type mise &>/dev/null; then
   eval "$(mise activate zsh)"
   eval "$(mise activate --shims)"
 fi
+. "$HOME/.cargo/env"
